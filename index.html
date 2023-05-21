@@ -28,9 +28,9 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js">
             </ul>
 
             <ul>
-                <li id="on"><i class="fa-solid fa-power-off" onclick="desligar()"></i></li>
-                <li id="off" style="display: none;"><i class="fa-solid fa-power-off" onclick="ligar()"></i></li>
-                <li><i class="fa fa-solid fa-bars" onclick="showMenu()"></i></li>
+                <li id="on"><a href="#"><i class="fa-solid fa-power-off" onclick="desligar()"></i></a></li>
+                <li id="off" style="display: none;"><a href="#"><i class="fa-solid fa-power-off" onclick="ligar()"></i></a></li>
+                <li><a href="#"><i class="fa fa-solid fa-bars" onclick="showMenu()"></i></a></li>
             </ul>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
@@ -89,7 +89,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js">
         coisas.style.display = "none";
         coisas2.style.display = "block";
         desliga.style.display="none";
-        liga.style.display="block";
+        liga.style.display="inline-block";
         plots1.style.display="none";
         plots2.style.display="none";
     }
@@ -97,7 +97,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js">
     function ligar(){
         coisas.style.display = "block";
         coisas2.style.display = "none";
-        desliga.style.display="block";
+        desliga.style.display="inline-block";
         liga.style.display="none";
         plots1.style.display="block";
         plots2.style.display="block";
