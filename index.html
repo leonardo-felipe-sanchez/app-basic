@@ -4,102 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Seja bem vindo</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-    <script src="https://kit.fontawesome.com/8d21d55a6a.js" crossorigin="anonymous"></script>
-    <script 
-src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js">
- </script>
 </head>
 <body>
-    <section class="header">
+    <header>
         <nav>
-            <ul id="ativo">
-                <li><i class="fa-solid fa-0 fa-xs"></i> <i class="fa-solid fa-n fa-xs"></i></li>
-                <li><i class="fa-solid fa-droplet" style="color: #4198aa;"></i></li>
-                <li><i class="fa-solid fa-seedling" style="color: #3d7c22;"></i></li>
-            </ul>
-            
-            <ul id="desativo" style="display: none;">
-                <li><i class="fa-solid fa-0 fa-xs"></i><i class="fa-solid fa-f fa-xs"></i><i class="fa-solid fa-f fa-xs"></i></li>
-                <li><i class="fa-solid fa-droplet" style="color: gray;"></i></li>
-                <li><i class="fa-solid fa-seedling" style="color: gray;"></i></li>
-            </ul>
+            <h2>
+                Minha verdinha!!!
+            </h2>
 
             <ul>
-                <li id="on"><a href="#"><i class="fa-solid fa-power-off" onclick="desligar()"></i></a></li>
-                <li id="off" style="display: none;"><a href="#"><i class="fa-solid fa-power-off" onclick="ligar()"></i></a></li>
-                <li><a href="#"><i class="fa fa-solid fa-bars" onclick="showMenu()"></i></a></li>
+                <li><a href="">compre agora!!!</a></li>
+                <li><a href=""> converse conosco</a></li>
+                <li><!-- HTML !-->
+                    <button class="button-18" role="button">login</button>
+                    </li>
             </ul>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="#"><i class="fa-solid fa-camera"></i> adicionar planta</a></li>
-                    <li><a href="#" style="color:gray"><i class="fa-solid fa-lock" ></i> pagamento</a></li>
-                    <li><a href="#" style="color:gray"><i class="fa-solid fa-lock" ></i> exame</a></li>
-                    <li><a href="https://wa.me/551122011879"><i class="fa-solid fa-circle-user"></i> fale conosco</a></li>
-                    <li><a href="#" style="background-color: red; border-radius: 20px; padding: 2px 10px;">sair</a></li>
-                </ul>
+        </nav>
+    </header>
+
+<article>
+    <section class="boas_vindas">
+        <div class="quadrado">
+
+            <div class="grass">
+                
+            </div>
+            <div class="texto">
+                
+            <h1>Melhor horta inteligente da história</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quisquam aliquid aut recusandae maiores mollitia illum rerum error, expedita architecto, dolorum reprehenderit qui iure asperiores.
+            </p>
             </div>
 
-        </nav>   
+        </div>
+        <div class="video-wrapper">
+            <video playsinline autoplay muted loop poster="cake.jpg">
+              <source src="./pexels_videos_4097 (2160p).mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
     </section>
+</article>
 
-
-<section class="grass">
-   <div class="grafico">
-    <canvas id="plots1"></canvas>
-    <canvas id="plots2"></canvas>
-   </div>
-   <div class="descricao">
-    <img src="./plantas-problemas-saudavel.png">
-   
-<div class="pokedex">
-    <h3>Lorem, ipsum dolor.</h3>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id adipisci quo atque consequuntur laborum. Enim repellat vel recusandae suscipit! Lorem, ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi fugit laudantium pariatur voluptates! Lorem ipsum dolor sit amet corsa.
-    </p>
-</div>
-
-   </div>
-</section>
-  
-    <script src="plot.js"></script>
+    <footer></footer>
 </body>
 </html>
-
-<script>
-    var navLinks = document.getElementById("navLinks");
-    var coisas = document.getElementById("ativo");
-    var coisas2 = document.getElementById("desativo");
-    var desliga = document.getElementById("on");
-    var liga = document.getElementById("off");
-    plots1 = document.getElementById("plots1");
-    plots2 = document.getElementById("plots2");
-
-    function showMenu(){
-        navLinks.style.right = "0";
-    }
-    function hideMenu(){
-        navLinks.style.right="-200px";
-    }
-
-    function desligar(){
-        coisas.style.display = "none";
-        coisas2.style.display = "block";
-        desliga.style.display="none";
-        liga.style.display="inline-block";
-        plots1.style.display="none";
-        plots2.style.display="none";
-    }
-
-    function ligar(){
-        coisas.style.display = "block";
-        coisas2.style.display = "none";
-        desliga.style.display="inline-block";
-        liga.style.display="none";
-        plots1.style.display="block";
-        plots2.style.display="block";
-    }
-</script>
